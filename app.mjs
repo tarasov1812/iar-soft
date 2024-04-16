@@ -1,5 +1,5 @@
 import express from 'express';
-import fs from 'fs';
+import bodyParser from 'body-parser';
 
 const app = express();
 const port = 3000;
