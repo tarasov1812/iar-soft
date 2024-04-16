@@ -14,7 +14,7 @@ const Personas = ({ personas, ciudades, paises, estudios, generos, gruposSanguin
         const city = ciudades.find(ciudad => ciudad.city_id === cityId);
         const countryId = city?.country_id;
         const country = paises.find(pais => pais.country_id === countryId);
-        let timezone = 'GMT'; // Default timezone if no country is found
+        let timezone = 'GMT';
         if (country) {
           switch (country.countryName) {
             case 'España':
