@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // const index = fs.readFileSync('index.html', 'utf8');
 // app.get('/', (req, res) => res.type('html').send(index));
